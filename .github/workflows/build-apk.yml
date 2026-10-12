@@ -22,7 +22,7 @@ jobs:
 
       - name: Extract Android project
         run: |
-          ZIP_FILE=$(find . -maxdepth 2 -type f -iname '*.zip' | head -n 1)
+          ZIP_FILE="./BW-Foot-Android-Fixed-1.0.1.zip"
           if [ -z "$ZIP_FILE" ]; then
             echo "ERROR: No ZIP file found in repository"
             exit 1
